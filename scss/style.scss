@@ -1,7 +1,11 @@
 @import "_reset";
 
+$body-color: repeating-linear-gradient(45deg, #606dbc, #606dbc 10px, #465298 10px, #465298 20px);
+$calc-background-color: #2752be85;
+$calc-button-color: #4272ea;
+
 body{
-    background-color: red;
+    background: $body-color;
     min-height: 100vh;
 
     display: flex;
@@ -11,13 +15,25 @@ body{
 .calc {
     display: grid;
     grid-template: repeat(5, 1fr) / repeat(4, 1fr);
-    gap: 5px;
+    gap: 2px;
+
+    background: $calc-background-color;
+    border: 6px solid $calc-background-color;
 }
 .calc__result {
     grid-column: -1 / 1;
-    background-color: white;
+
+    font-size: 24px;
+    border: 0;
+    outline: none;
+    background-color: $calc-button-color;
 }
 .calc__btn {
+    font-size: 24px;
+
+    background-color: $calc-button-color;
+    border: 0;
+    
     cursor: pointer;
     padding: 25px 40px;
 }
@@ -25,5 +41,7 @@ body{
     grid-column: 1 / 3;
 }
 .calc__btn--equal{
-    grid-column: 3 / 5;
+}
+.calc__btn--0{
+    grid-column: 1 / 3;
 }
