@@ -1,7 +1,7 @@
 let result = document.querySelector('.calc__result')
 
 document.querySelector('.calc').addEventListener('click', (event) =>{
-    if(event.target.classList.contains('calc__result')) return;
+    if(!event.target.classList.contains('calc__btn')) return;
     
     symb = event.target.innerText;
     switch (symb) {

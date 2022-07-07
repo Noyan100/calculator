@@ -19,6 +19,7 @@ body{
 .calc {
     display: grid;
     grid-template: repeat(5, 1fr) / repeat(4, 1fr);
+    max-height: 800px;
 }
 .calc__result {
     grid-column: -1 / 1;
