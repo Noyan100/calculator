@@ -1,8 +1,9 @@
 @import "_reset";
 
 $body-color: repeating-linear-gradient(45deg, #606dbc, #606dbc 10px, #465298 10px, #465298 20px);
-$calc-background-color: #2752be85;
-$calc-button-color: #4272ea;
+$calc-background-color: #2752be;
+$calc-button-bgcolor: #4272ea;
+$calc-button-color: #ffffffb8;
 
 body{
     background: $body-color;
@@ -15,7 +16,7 @@ body{
 .calc {
     display: grid;
     grid-template: repeat(5, 1fr) / repeat(4, 1fr);
-    gap: 2px;
+    gap: 5px;
 
     background: $calc-background-color;
     border: 6px solid $calc-background-color;
@@ -24,14 +25,18 @@ body{
     grid-column: -1 / 1;
 
     font-size: 24px;
+    color: $calc-button-color;
     border: 0;
     outline: none;
-    background-color: $calc-button-color;
+    background-color: $calc-button-bgcolor;
+
+    padding: 0 10px;
 }
 .calc__btn {
     font-size: 24px;
+    color: $calc-button-color;
 
-    background-color: $calc-button-color;
+    background-color: $calc-button-bgcolor;
     border: 0;
     
     cursor: pointer;

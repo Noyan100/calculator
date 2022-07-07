@@ -59,21 +59,24 @@ body {
 .calc {
   display: grid;
   grid-template: repeat(5, 1fr)/repeat(4, 1fr);
-  gap: 2px;
-  background: rgba(39, 82, 190, 0.5215686275);
-  border: 6px solid rgba(39, 82, 190, 0.5215686275);
+  gap: 5px;
+  background: #2752be;
+  border: 6px solid #2752be;
 }
 
 .calc__result {
   grid-column: -1/1;
   font-size: 24px;
+  color: rgba(255, 255, 255, 0.7215686275);
   border: 0;
   outline: none;
   background-color: #4272ea;
+  padding: 0 10px;
 }
 
 .calc__btn {
   font-size: 24px;
+  color: rgba(255, 255, 255, 0.7215686275);
   background-color: #4272ea;
   border: 0;
   cursor: pointer;
