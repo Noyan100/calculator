@@ -9,26 +9,26 @@
 </head>
 <body>
     <article class="calc">
-        <input name="result" type="text" class="calc__result"></input>
+        <output name="result" pattern="[1-9]" class="calc__result"></output>
 
         <button type="button" class="calc__btn calc__btn--reset" id="reset">C</button>
         <button type="button" class="calc__btn">%</button>
-        <button type="button" class="calc__btn">/</button>
+        <button type="button" class="calc__btn calc__btn--orange">/</button>
         <button type="button" class="calc__btn">1</button>
         <button type="button" class="calc__btn">2</button>
         <button type="button" class="calc__btn">3</button>
-        <button type="button" class="calc__btn">*</button>
+        <button type="button" class="calc__btn calc__btn--orange">*</button>
         <button type="button" class="calc__btn">4</button>
         <button type="button" class="calc__btn">5</button>
         <button type="button" class="calc__btn">6</button>
-        <button type="button" class="calc__btn">-</button>
+        <button type="button" class="calc__btn calc__btn--orange">-</button>
         <button type="button" class="calc__btn">7</button>
         <button type="button" class="calc__btn">8</button>
         <button type="button" class="calc__btn">9</button>
-        <button type="button" class="calc__btn">+</button>
+        <button type="button" class="calc__btn calc__btn--orange">+</button>
         <button type="button" class="calc__btn calc__btn--0">0</button>
         <button type="button" class="calc__btn">.</button>
-        <button type="button" class="calc__btn calc__btn--equal" id="equal">=</button>
+        <button type="button" class="calc__btn calc__btn--equal calc__btn--orange" id="equal">=</button>
     </article>
     <script src="js/index.js"></script>
 </body>
