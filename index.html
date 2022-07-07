@@ -9,9 +9,9 @@
 </head>
 <body>
     <article class="calc">
-        <output name="result" class="calc__result"></output>
+        <input name="result" type="text" class="calc__result"></input>
 
-        <button type="button" class="calc__btn">C</button>
+        <button type="button" class="calc__btn calc__btn--reset" id="reset">C</button>
         <button type="button" class="calc__btn">%</button>
         <button type="button" class="calc__btn">/</button>
         <button type="button" class="calc__btn">1</button>
@@ -28,7 +28,7 @@
         <button type="button" class="calc__btn">+</button>
         <button type="button" class="calc__btn">0</button>
         <button type="button" class="calc__btn">.</button>
-        <button type="button" class="calc__btn">=</button>
+        <button type="button" class="calc__btn calc__btn--equal" id="equal">=</button>
     </article>
     <script src="js/index.js"></script>
 </body>
